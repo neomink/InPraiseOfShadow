@@ -1,0 +1,74 @@
+html {
+    background-color: white;
+    /*aimation*/
+    animation-name: bg;
+    animation-duration: 10s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    /* animation-timing-function:ease-in-out; */
+}
+
+@keyframes bg {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+
+
+#circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 500px;
+    height: 500px;
+    background: black;
+    border-radius: 50%;
+    /*animation*/
+    animation-name: circle;
+    animation-duration: 10s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    /* animation-timing-function:ease-in-out; */
+}
+
+@keyframes circle {
+    0% {
+        background-color: black;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 700px;
+    height: 700px;
+}
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    font-size: 124pt;
+    font-color: red;
+    /*animation*/
+    animation-name: title;
+    animation-duration: 10s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    /* animation-timing-function:ease-in-out; */
+}
+
+@keyframes title {
+    font
+}
