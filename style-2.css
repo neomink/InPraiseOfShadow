@@ -43,30 +43,9 @@ body {
     background-color: black;
 }
 
-.pause:active {
-    background-color: green;
-    
-    animation-play-state: paused;
-}
-
 .content {
     margin-left: 12vw;
     margin-top: 40vh;
-    /*animation*/
-    animation-name: nope;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    /* animation-timing-function: ease-in-out; */
-    animation-direction: alternate;
-}
-
-@keyframes content {
-    0% {
-        background-color: white;
-    }
-    100% {
-        background-color: black;
-    }
 }
 
 .passage {

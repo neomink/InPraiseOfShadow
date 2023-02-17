@@ -8,14 +8,37 @@ body {
   bottom: 0;
   left: 0;
   width: 10vw;
+  background-color: white;
   border-right: 1px solid black;
+}
+
+.home {
+  margin-top: 1vw;
+  margin-left: 1vw;
+  width: 8vw;
+  height: 8vw;
+  mix-blend-mode: difference;
+}
+
+.window {
+  width: 5vw;
+  height: 5vw;
+  margin-left: 2.5vw;
+  margin-top: 60vh;
 }
 
 .content {
   margin-left: 10vw;
+  background-color: white;
 }
 
-.circle {
+.content-logo {
+  width: 50%;
+  height: 50%;
+  mix-blend-mode: difference;
+}
+
+/* .circle {
   position: relative;
   top: 10vh;
   bottom: 10vh;
@@ -42,4 +65,4 @@ body {
   width: 45%;
   height: 45%;
   filter: invert(100%);
-}
+} */
