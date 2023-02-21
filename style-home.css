@@ -97,6 +97,13 @@ body {
     height: 10vw;
     border-radius: 50%;
     background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+#circle-1:hover {
+    transform-origin: center;
+    width: 9vw;
+    height: 9vw;
 }
 
 #circle-2 {
@@ -107,6 +114,13 @@ body {
     height: 10vw;
     border-radius: 50%;
     background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+#circle-2:hover {
+    transform-origin: center;
+    width: 9vw;
+    height: 9vw;
 }
 
 #circle-3 {
@@ -117,6 +131,13 @@ body {
     height: 10vw;
     border-radius: 50%;
     background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+#circle-3:hover {
+    transform-origin: center;
+    width: 9vw;
+    height: 9vw;
 }
 
 #circle-4 {
@@ -127,6 +148,13 @@ body {
     height: 10vw;
     border-radius: 50%;
     background-color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+#circle-4:hover {
+    transform-origin: center;
+    width: 9vw;
+    height: 9vw;
 }
 
 /* @media(max-width: 600px) {

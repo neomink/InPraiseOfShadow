@@ -115,11 +115,18 @@ header {
     }
 }
 
-h1 {
-    padding-right: 5vw;
-    padding-bottom: 5vh;
-    text-align: right;
+.next {
+    float: right;
     color:grey;
     margin: 0px;
-    text-decoration: none;
+    text-decoration-line: none;
+    font-size: 32pt;
+    font-family: 'Noto Serif JP', serif;
+    -webkit-transition: color 2s ease-out;
+    -moz-transition: color 2s ease-out;
+    -o-transition: color 2s ease-out;
+    transition: color 2s ease-out;}
+
+.next:hover {
+    color: rgb(150, 149, 75);
 }
