@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+    margin: 0px;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 80px;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.home-logo {
+    padding-top: 8px;
+    width: 65px;
+    height: auto;
+    border-radius: 50%;
+    /*animation*/
+    animation-name: home-logo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes home-logo {
+    0%{
+        filter: invert(0%)
+    }
+    100% {
+        filter: invert(100%)
+    }
+}
+
+.content {
+    margin-top: 80px;
+    background-color: white;
+}
+
+
+h1 {
+    margin:0px;
+    padding-top: 300px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    font-family: 'Playfair Display', serif;
+    font-size: 64pt;
+ }
+
+h2 {
+   margin:0px;
+
+   padding-left: 100px;
+   padding-right: 100px;
+   padding-bottom: 50px;
+   font-family: 'Playfair Display', serif;
+   font-size: 36pt;
+}
+
+.image {
+    width: 40vw;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+.text {
+    margin:0px;
+    position: relative;
+    bottom: 20vw;
+    left: 52vw;
+    width: 40vw;
+    height: auto;
+    text-align: left;
+    font-family: 'Playfair Display', 'Noto Serif JP', serif ;
+}
+
+#image-2 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    position: relative;
+    bottom: 20vh;
+    left: 30vw;
+    width: 60vw;
+    height: auto;
+}
+
+#image-3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    bottom: 10vh;
+    left: 0vw;
+    width: 60vw;
+    height: auto;
+}
