@@ -101,9 +101,7 @@ body {
 }
 
 #circle-1:hover {
-    transform-origin: center;
-    width: 9vw;
-    height: 9vw;
+    background-color: rgb(46, 45, 43);
 }
 
 #circle-2 {
@@ -118,9 +116,7 @@ body {
 }
 
 #circle-2:hover {
-    transform-origin: center;
-    width: 9vw;
-    height: 9vw;
+    background-color: rgb(46, 45, 43);
 }
 
 #circle-3 {
@@ -135,9 +131,7 @@ body {
 }
 
 #circle-3:hover {
-    transform-origin: center;
-    width: 9vw;
-    height: 9vw;
+    background-color: rgb(46, 45, 43);
 }
 
 #circle-4 {
@@ -152,9 +146,7 @@ body {
 }
 
 #circle-4:hover {
-    transform-origin: center;
-    width: 9vw;
-    height: 9vw;
+    background-color: rgb(46, 45, 43);
 }
 
 /* @media(max-width: 600px) {
