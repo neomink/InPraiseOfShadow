@@ -118,6 +118,9 @@ header {
 }
 
 .next {
+    position: absolute;
+    bottom: 1vw;
+    left: 90vw;
     float: right;
     color:grey;
     margin: 0px;
@@ -145,5 +148,8 @@ header {
     }
     .text {
         font-size: 12px;
+    }
+    .next {
+        left:70vw;
     }
 }
