@@ -95,7 +95,7 @@ body {
     background-color: rgb(46, 45, 43);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .home-logo {
         margin-top: 30vh;
     }
