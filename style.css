@@ -130,3 +130,16 @@ header {
 .next:hover {
     color: rgb(150, 149, 75);
 }
+
+@media (max-width: 600px) {
+    header {
+        height: 150px;
+    }
+    .home-logo {
+        width: 100px;
+        height: auto;
+    }
+    .switch {
+        font-size: 12pt;
+    }
+}

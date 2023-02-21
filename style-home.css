@@ -1,59 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap');
 
-.interactive-buttons {
-    /* display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px; */
-    position: absolute;
-    top: 87vh;
-    left: 32vw;
-    width: 80vw;
-    height: auto;
-    line-height: 700%;
-}
-
-.night {
-    background-color: transparent;
-    border: 1px solid black;
-    font-family: 'Noto Serif JP', serif;
-    font-size: 24pt;
-    color: grey;
-}
-
-.night:hover {
-    color: red;
-}
-
-.day {
-    background-color: transparent;
-    border: 1px solid black;
-    font-family: 'Noto Serif JP', serif;
-    font-size: 24pt;
-    color: grey;
-}
-
-.day:hover {
-    color: red;
-}
-
-/* when switched on animation pause */
-.switch {
-    /* background-color: grey; */
-    border: 1px solid black;
-    cursor: pointer;
-    font-family: 'Noto Serif JP', serif;
-    font-size: 24pt;
-    color: grey;
-}
-
-.switched-on .home-logo {
-    animation-play-state: paused;
-}
-
-.switch:hover {
-    color: red;
-}
-
 body {
     display: flex;
     justify-content: center;
@@ -149,8 +95,20 @@ body {
     background-color: rgb(46, 45, 43);
 }
 
-/* @media(max-width: 600px) {
-    html {
-        display: none;
-    } 
-} */
+@media (max-width: 600px) {
+    .home-logo {
+        margin-top: 30vh;
+    }
+    #circle-1:hover {
+        background-color:black;
+    }
+    #circle-2:hover {
+        background-color:black;
+    }   
+     #circle-3:hover {
+        background-color:black;
+    }    
+    #circle-4:hover {
+        background-color:black;
+    }
+}
