@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap');
+
+.interactive-buttons {
+    /* display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px; */
+    position: absolute;
+    top: 87vh;
+    left: 32vw;
+    width: 80vw;
+    height: auto;
+    line-height: 700%;
+}
+
+.night {
+    background-color: transparent;
+    border: 1px solid black;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 24pt;
+    color: grey;
+}
+
+.night:hover {
+    color: red;
+}
+
+.day {
+    background-color: transparent;
+    border: 1px solid black;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 24pt;
+    color: grey;
+}
+
+.day:hover {
+    color: red;
+}
+
+/* when switched on animation pause */
+.switch {
+    /* background-color: grey; */
+    border: 1px solid black;
+    cursor: pointer;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 24pt;
+    color: grey;
+}
+
+.switched-on .home-logo {
+    animation-play-state: paused;
+}
+
+.switch:hover {
+    color: red;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    background-color: white;
+    margin: 0px;
+}
+
+.home-logo {
+    width: 50vw;
+    height: 50vw;
+    margin-top: 3vw;
+    border-radius: 50%;
+    /*animation*/
+    animation-name: home-logo;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes home-logo {
+    0%{
+        filter: invert(0%)
+    }
+    100% {
+        filter: invert(100%)
+    }
+}
+
+.circles {
+    filter: blur(8px);
+}
+
+
+#circle-1 {
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#circle-2 {
+    position: absolute;
+    top: 5vh;
+    left: 85vw;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#circle-3 {
+    position: absolute;
+    top: 80vh;
+    left: 5vw;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#circle-4 {
+    position: absolute;
+    top: 80vh;
+    left: 85vw;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: black;
+}
+
+/* @media(max-width: 600px) {
+    html {
+        display: none;
+    } 
+} */

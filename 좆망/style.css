@@ -1,0 +1,68 @@
+body {
+  margin: 0px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 10vw;
+  background-color: white;
+  border-right: 1px solid black;
+}
+
+.home {
+  margin-top: 1vw;
+  margin-left: 1vw;
+  width: 8vw;
+  height: 8vw;
+  mix-blend-mode: difference;
+}
+
+.window {
+  width: 5vw;
+  height: 5vw;
+  margin-left: 2.5vw;
+  margin-top: 60vh;
+}
+
+.content {
+  margin-left: 10vw;
+  background-color: white;
+}
+
+.content-logo {
+  width: 50%;
+  height: 50%;
+  mix-blend-mode: difference;
+}
+
+/* .circle {
+  position: relative;
+  top: 10vh;
+  bottom: 10vh;
+  left: 20vw;
+  width: 50vw;
+  height: 50vw;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.container-title {
+  position: absolute;
+  top: 23vh;
+  left: 37vw;
+  width: 40vw;
+  height: 40vw;
+  border: 0px solid cyan;
+}
+
+
+.title {  
+  vertical-align: middle;
+  align-items: center;
+  width: 45%;
+  height: 45%;
+  filter: invert(100%);
+} */

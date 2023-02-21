@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap');
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 80px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 2;
+}
+
+.interactive-buttons {
+    position: fixed;
+    top: 1vw;
+    left: 1vw;
+    word-spacing: 300%;
+}
+
+.night {
+    background-color: transparent;
+    border: 0px solid black;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20pt;
+    color: grey;
+}
+
+.night:hover {
+    color: red;
+}
+
+.day {
+    background-color: transparent;
+    border: 0px solid black;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20pt;
+    color: grey;
+}
+
+.day:hover {
+    color: red;
+}
+
+/* when switched on animation pause */
+.switch-text {
+    /* background-color: grey; */
+    border: 0px solid black;
+    cursor: pointer;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20pt;
+    color: grey;
+}
+
+.switched-on-text .paragraph {
+    animation-play-state: paused;
+}
+
+
+.switch-text:hover {
+    color: red;
+}
+
+.switch-background {
+    /* background-color: grey; */
+    border: 0px solid black;
+    cursor: pointer;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20pt;
+    color: grey;
+}
+
+.switched-on-background body {
+    animation-play-state: paused;
+}
+
+
+.switch-background:hover {
+    color: red;
+}
+
+
+/* when switched on change the header */
+/* .switched-on .paragraph {
+    background-color: red;
+}
+
+.on-off-switch {
+    cursor: pointer;
+} */
+
+.home-logo {
+    padding-top: 8px;
+    width: 65px;
+    height: auto;
+    border-radius: 50%;
+    /*animation*/
+    animation-name: home-logo;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes home-logo {
+    0%{
+        filter: invert(0%)
+    }
+    100% {
+        filter: invert(100%)
+    }
+}
+
+body {
+    position: relative;
+    margin: 0px;
+    top: 80px;
+    background-color: black;
+    /*animation*/
+    animation-name: bg;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bg {
+    0% {
+        background-color: black;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+
+
+.content {
+    position: relative;
+    top: 80px;
+    left: 10px;
+    width: 40vw;
+    padding-top: 300px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    z-index: 1;
+}
+
+.paragraph {
+    color: white;
+    font-size: 90%;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    line-height: 230%;
+    letter-spacing: 1px;
+    margin-bottom: 250px;
+    /*animation*/
+    animation-name: text;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes text {
+    0% {
+        color: white;
+    }
+    100% {
+        color: black;
+    }
+}
+
+.next {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1vh;
+    margin-left: vw;
+    background-color: rgb(254, 220, 134);
+    border-radius: 50%;
+    filter: blur(1rem);
+    cursor: pointer;
+    /*animation*/
+    animation-name: next;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+.next:hover {
+    cursor: help;
+}
+
+@keyframes next {
+    0% {
+        width: 100px;
+        height: 100px;
+    }
+    100% {
+        width: 70px;
+        height: 70px;
+    }
+}

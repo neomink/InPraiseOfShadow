@@ -1,68 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap');
+
 body {
-  margin: 0px;
+    margin: 0px;
 }
 
-.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 10vw;
-  background-color: white;
-  border-right: 1px solid black;
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 80px;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
 }
 
-.home {
-  margin-top: 1vw;
-  margin-left: 1vw;
-  width: 8vw;
-  height: 8vw;
-  mix-blend-mode: difference;
+.home-logo {
+    padding-top: 8px;
+    width: 65px;
+    height: auto;
+    border-radius: 50%;
+    /*animation*/
+    animation-name: home-logo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
-.window {
-  width: 5vw;
-  height: 5vw;
-  margin-left: 2.5vw;
-  margin-top: 60vh;
+@keyframes home-logo {
+    0%{
+        filter: invert(0%)
+    }
+    100% {
+        filter: invert(100%)
+    }
+}
+
+.buttons {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+}
+
+.switched-on .content {
+    animation-play-state: paused;
+}
+
+.switched-on .text {
+    animation-play-state: paused;
+}
+
+.switch {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 18pt;
+    font-family: 'Noto Serif JP', serif;
+    color: grey;
+}
+
+.switch:hover {
+    color: black;
 }
 
 .content {
-  margin-left: 10vw;
-  background-color: white;
+    position: relative;
+    margin-top: 80px;
+    /*animation*/
+    animation-name: content;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
-.content-logo {
-  width: 50%;
-  height: 50%;
-  mix-blend-mode: difference;
+@keyframes content {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: black;
+    }
 }
 
-/* .circle {
-  position: relative;
-  top: 10vh;
-  bottom: 10vh;
-  left: 20vw;
-  width: 50vw;
-  height: 50vw;
-  background-color: black;
-  border-radius: 50%;
+.text-container {
+    padding-top: 300px;
+    padding-left: 100px;
+    padding-bottom: 150px;
+    width: 40vw;
+    z-index: 1;
 }
 
-.container-title {
-  position: absolute;
-  top: 23vh;
-  left: 37vw;
-  width: 40vw;
-  height: 40vw;
-  border: 0px solid cyan;
+.text {
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri;
+    line-height: 230%;
+    letter-spacing: 1px;
+    /*animation*/
+    animation-name: text;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
+@keyframes text {
+    0% {
+        filter: invert(0%)
+    }
+    100%{
+        filter: invert(100%)
+    }
+}
 
-.title {  
-  vertical-align: middle;
-  align-items: center;
-  width: 45%;
-  height: 45%;
-  filter: invert(100%);
-} */
+h1 {
+    padding-right: 5vw;
+    padding-bottom: 5vh;
+    text-align: right;
+    color:grey;
+    margin: 0px;
+    text-decoration: none;
+}
