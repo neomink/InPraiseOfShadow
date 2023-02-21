@@ -143,7 +143,7 @@ header {
         height: auto;
     }
     .switch {
-        font-size: 12pt;
+        display:none;
     }
     .text-container {
         padding-left: 10vw;
